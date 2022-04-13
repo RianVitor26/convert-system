@@ -18,15 +18,57 @@
 
 
 body{
-    background: slateblue;
+    background: #14151d;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly
+}
+
+.title-wrapper,
+.content-wrapper,
+.panel-wrapper{
+    width: 100%;
+}
+
+.title-wrapper h1{
+    text-align: center;
+    padding: 1rem 0;
+    color: rgb(231, 231, 233);
+}
+
+.content-wrapper{
+    flex-direction: column;
+}
+
+.btn-wrapper{
+    width: 80%;
+}
+
+.btn{
+    width: 200px;
+    height: 100px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.panel-wrapper{
+    flex-direction: column;
+}
+
+.panel{
+    width: 80%;
+    height: 70vh;
+    display: none;
 }
 
 
-
-
-
-
-
+.panel.active{
+    display: block;
+}
 
 
 
