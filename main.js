@@ -17,3 +17,4 @@ function resetAll() {
     buttons.forEach(btn => btn.classList.remove('active'))
     panels.forEach(panel => panel.classList.remove('active'))
 }
+
