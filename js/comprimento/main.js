@@ -2,9 +2,11 @@ var imported = document.createElement('script');
 imported.src = 'js/comprimento/metro.js';
 document.head.appendChild(imported);
 
+var imported = document.createElement('script');
 imported.src = 'js/comprimento/km.js';
 document.head.appendChild(imported); 
 
+var imported = document.createElement('script');
 imported.src = 'js/comprimento/cm.js';
 document.head.appendChild(imported); 
 

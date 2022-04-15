@@ -1,7 +1,7 @@
 // Listas
 const temperatura = [ "Celsius", "Fahrenheit", "kelvin"]
-const dados = [ "Bit", "Byte", "Terabyte"]
 const comprimento = [ "Metro", "Quilômetro", "Centímentro"]
+const medidas = [ "Gramas", "Kilogramas", "Litros", "Militros"]
 
 // Estruturação
 const getType = () => {
@@ -16,10 +16,10 @@ const setValues = (index) => {
       setSelect(temperatura)
       break;
     case "2":
-      setSelect(dados)
+      setSelect(comprimento)
       break;
     case "3":
-      setSelect(comprimento)
+      setSelect(medidas)
       break;
     default:
       break;
@@ -43,7 +43,15 @@ const preecherSelect= (id, list) => {
 
 var imported = document.createElement('script');
 imported.src = 'js/temp/main.js';
-document.head.appendChild(imported); 
+document.body.appendChild(imported); 
+
+var imported = document.createElement('script');
+imported.src = 'js/comprimento/main.js';
+document.body.appendChild(imported); 
+
+var imported = document.createElement('script');
+imported.src = 'js/medidas/main.js';
+document.body.appendChild(imported); 
 
 // Conversões
 const convert = () => {
@@ -54,7 +62,10 @@ const convert = () => {
       convertTemperatura()
       break;
     case "2":
-      console.log("Dados")
+      convertComprimento()
+      break;
+    case "3":
+      convertMedidas()
       break;
     default:
       break;

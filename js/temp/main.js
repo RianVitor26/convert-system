@@ -2,9 +2,11 @@ var imported = document.createElement('script');
 imported.src = 'js/temp/celsiusTemp.js';
 document.head.appendChild(imported);
 
-imported.src = 'js/temp/fahr.js';
+var imported = document.createElement('script');
+imported.src = 'js/temp/fahrTemp.js';
 document.head.appendChild(imported); 
 
+var imported = document.createElement('script');
 imported.src = 'js/temp/kelvinTemp.js';
 document.head.appendChild(imported); 
 
