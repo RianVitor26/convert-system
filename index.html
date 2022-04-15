@@ -1,39 +1,41 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css'/>
-    <title>Document</title>
+    <title>UniConvert</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header class="title-wrapper">
-        <h1>Sistema de conversão de valores</h1>
-    </header>
 
-    <main class="content-wrapper flex">
-            <div class="btn-wrapper flex">
-                <button class="btn active" data-js="converter1">converter 1</button>
-                <button class="btn" data-js="converter2">converter 2</button>
-                <button class="btn" data-js="converter3">converter 3</button>
-                <button class="btn" data-js="converter4">converter 4</button>
-                <button class="btn" data-js="converter5">converter 5</button>
-                <button class="btn" data-js="converter6">converter 6</button>
-                <button class="btn" data-js="converter7">converter 7</button>
+<body>
+    <h1>UniSales Convert</h1>
+    <div class="container">
+        <div class="box-container">
+           <select name="select-convert" id="convert" class="types" onchange="getType()">
+            <option value="0">Selecione um Tipo</option>
+            <option value="1">Temperatura</option>
+            <option value="2">Comprimento</option>
+            <option value="3">Medidas</option>
+           </select>
+           <div class="block-input">
+                <input type="text" id="input-left" onchange="convert()">
+                <select onchange="convert()" id="select-left" class="detail">
+                </select>
+           </div>
+           <div class="equals">=</div>
+           <div class="block-input">
+                <input type="text" id="input-right" disabled>
+                <select id="select-right" onchange="convert()" class="detail">
+                </select>
             </div>
-            <div class="panel-wrapper flex">
-                <div class="panel active" data-js="converter1">Lorem, ipsum dolor.</div>
-                <div class="panel" data-js="converter2"><p class="moedas"></p></div>
-                <div class="panel" data-js="converter3">Lorem, ipsum dolor.</div>
-                <div class="panel" data-js="converter4">Lorem, ipsum dolor.</div>
-                <div class="panel" data-js="converter5">Lorem, ipsum dolor.</div>
-                <div class="panel" data-js="converter6">Lorem, ipsum dolor.</div>
-                <div class="panel" data-js="converter7">Lorem, ipsum dolor.</div>
-            </div>
-    </main>
+        </div>
+    </div>
+    <footer>
+        <p>Desenvolvido para a diciplina de Projeto Integrador</p>
+    </footer>
+    <script src="js/script.js"></script>
 </body>
-<script src="main.js"></script>
-<script src="moedas.js"></script> 
+
 </html>
