@@ -14,18 +14,19 @@
     <div class="container">
         <div class="box-container">
            <select name="select-convert" id="convert" class="types" onchange="getType()">
+            <option value="0">Selecione um Tipo</option>
             <option value="1">Temperatura</option>
             <option value="2">Armazamento de dados</option>
            </select>
            <div class="block-input">
-                <input type="text" id="input-left">
+                <input type="text" id="input-left" onchange="convert()">
                 <select onchange="convert()" id="select-left" class="detail">
                 </select>
            </div>
            <div class="equals">=</div>
            <div class="block-input">
-                <input type="text" id="input-right">
-                <select  onchange="convert()" id="select-right" class="detail">
+                <input type="text" id="input-right" disabled>
+                <select id="select-right" onchange="convert()" class="detail">
                 </select>
             </div>
         </div>

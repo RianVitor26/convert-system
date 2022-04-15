@@ -53,6 +53,7 @@ const convert = () => {
   }
 }
 
+// Convertendo temperatura
 const convertTemperatura = () => {
   var e = document.getElementById("select-left");
   var index = e.options[e.selectedIndex].value;
@@ -72,17 +73,23 @@ const convertTemperatura = () => {
 const celsiusConvert = () => {
   var e = document.getElementById("select-right");
   var index = e.options[e.selectedIndex].value;
+  
+  var input_left = document.getElementById("input-left").value;
+  var input_right = document.getElementById("input-right");
+
   switch (index) {
     case "1":
-      console.log("celsius x celsius")
+      input_right.value = "Mesmo tipo"
       break;
     case "2":
-      console.log("celsiu x Fahrenheit")
-      // Logica para converter para Fahrenheit
+      // (C × 9/5) + 32 
+      var value = (input_left * 9/5) + 32
+      input_right.value = value      
       break;
     case "3":
-      console.log("celsiu x kelvin")
-       // Logica para converter para kelvin
+       // C + 273,15 
+       var value = input_left * 1 + 273.15
+       input_right.value = value      
       break;
   }
 }
