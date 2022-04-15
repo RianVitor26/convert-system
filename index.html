@@ -13,35 +13,27 @@
     <h1>UniSales Convert</h1>
     <div class="container">
         <div class="box-container">
-           <select name="select-convert" class="types">
-            <option>Stone</option>
-            <option>Stone</option>
-            <option>Stone</option>
+           <select name="select-convert" id="convert" class="types" onchange="getType()">
+            <option value="1">Temperatura</option>
+            <option value="2">Armazamento de dados</option>
            </select>
            <div class="block-input">
-               <input type="text">
-               <select class="detail">
-                <option>Stone</option>
-                <option>Stone</option>
-                <option>Stone</option>
-                <option>Stone</option>
-               </select>
+                <input type="text">
+                <select id="select-left" class="detail">
+                </select>
            </div>
            <div class="equals">=</div>
            <div class="block-input">
-            <input type="text">
-            <select class="detail">
-             <option>Stone</option>
-             <option>Stone</option>
-             <option>Stone</option>
-             <option>Stone</option>
-            </select>
+                <input type="text">
+                <select id="select-right" class="detail">
+                </select>
         </div>
         </div>
     </div>
     <footer>
         <p>Desenvolvido para a diciplina de Projeto Integrador</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
