@@ -7,15 +7,15 @@ const metroConvert = () => {
   
   switch (index) {
     case "1":
-      console.log("centimetro x metro")
-      // Logica para converter para metro
+      var value = 1 // logica aqui
+      input_right.value = value;
       break;
     case "2":
-      console.log("centimetro x kilometro")
-      // Logica para converter para kilometro
+      var value = 1 // logica aqui
+      input_right.value = value;
       break;
     case "3":
-      console.log("centimetro x centimetro")
+      input_right.value = "Mesmo Valor";
       break;
   }
 }

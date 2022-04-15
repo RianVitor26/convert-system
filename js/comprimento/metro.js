@@ -3,19 +3,21 @@ const metroConvert = () => {
   var index = e.options[e.selectedIndex].value;
   
   var input_left = document.getElementById("input-left").value;
-  var input_right = document.getElementById("input-right");
+  var input_right = document.getElementById("input-right"); // resultado final
   
   switch (index) {
     case "1":
-      console.log("metro x metro")
+      input_right.value = "Mesmo Valor";
       break;
     case "2":
-      console.log("metro x kilometro")
       // Logica para converter para kilometro
+      var value = 1 // logica aqui
+      input_right.value = value;
       break;
     case "3":
-      console.log("metro x centimetro")
       // Logica para converter para kilometro
+      var value = 1 // logica aqui
+      input_right.value = value;
       break;
   }
 }

@@ -1,6 +1,7 @@
 // Listas
 const temperatura = [ "Celsius", "Fahrenheit", "kelvin"]
 const dados = [ "Bit", "Byte", "Terabyte"]
+const comprimento = [ "Metro", "Quilômetro", "Centímentro"]
 
 // Estruturação
 const getType = () => {
@@ -16,6 +17,9 @@ const setValues = (index) => {
       break;
     case "2":
       setSelect(dados)
+      break;
+    case "3":
+      setSelect(comprimento)
       break;
     default:
       break;
