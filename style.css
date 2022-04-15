@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+*{
+    outline: 0;
+    font-family: 'Oswald', sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #3c4043;
+}
+
+h1{
+    text-align: center;
+    font-size: 55px;
+    color: white;
+}
+
+.box-container {
+    position: absolute;
+    width: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #202124;
+    padding: 10px;
+}
+
+.types {
+    background-color: #5e636e;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    appearance: button;
+    outline: none;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+
+.block-input{
+    display: inline-block;
+    width: 211px;
+    padding-top: 10px;
+}
+
+.block-input input{
+    background-color: #202124;
+    border: 1px solid #3c4043;
+    border-radius: 2px 2px 0 0;
+    border-radius: 2px 2px 0 0;
+    color: #fff;
+    font-size: 180%;
+    height: 40px;
+    padding: 1px 6px;
+    text-align: center;
+    width: 197px;
+}
+
+.block-input select{
+    background-position-x: 95%;
+    border-radius: 0 0 2px 2px;
+    color: #bdc1c6;
+    width: 211px;
+    margin-top: -1px;
+}
+
+.block-input .detail{
+    background: url(//ssl.gstatic.com/ui/v1/disclosure/grey-disclosure-arrow-up-down.png) 100% no-repeat #303134;
+    border: 1px solid #3c4043;
+    font-size: 13px;
+    padding: 5px 16px 5px 5px;
+    vertical-align: middle;
+    appearance: none;
+}
+
+.equals {
+    display: inline-block;
+    line-height: 44px;
+    width: 27px;
+    text-align: center;
+    font-size: 26px;
+    color: #787878;
+    padding-top: 10px;
+    vertical-align: top;
+    margin-left: -4px;
+    margin-right: -4px;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    color: #FFF;
+    width: 100%;
+    text-align: center;
+}
