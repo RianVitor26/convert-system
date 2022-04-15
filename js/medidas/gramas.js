@@ -1,4 +1,4 @@
-const kmConvert = () => {
+const gramasConvert = () => {
   var e = document.getElementById("select-right");
   var index = e.options[e.selectedIndex].value;
   
@@ -7,17 +7,19 @@ const kmConvert = () => {
   
   switch (index) {
     case "1":
-      // Logica para converter para metro
-      var value = 1 // logica aqui
-      input_right.value = value;
-      break;
-    case "2":
       input_right.value = "Mesmo Valor";
       break;
-    case "3":
-      // Logica para converter para kilometro
+    case "2":
       var value = 1 // logica aqui
       input_right.value = value;
       break;
+    case "3":
+      var value = 1 // logica aqui
+      input_right.value = value;
+      break;
+    case "4":
+        var value = 1 // logica aqui
+        input_right.value = value;
+        break;
   }
 }

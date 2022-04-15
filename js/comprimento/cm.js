@@ -1,4 +1,4 @@
-const metroConvert = () => {
+const cmConvert = () => {
   var e = document.getElementById("select-right");
   var index = e.options[e.selectedIndex].value;
   
