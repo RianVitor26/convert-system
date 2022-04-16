@@ -10,14 +10,13 @@ const metroConvert = () => {
       input_right.value = "Mesmo Valor";
       break;
     case "2":
-      // Logica para converter para kilometro
-      var value = 1 // logica aqui
-      input_right.value = value;
+      //m pra km
+      var value = input_left / 1000
+      input_right.value = value     
       break;
     case "3":
-      // Logica para converter para kilometro
-      var value = 1 // logica aqui
-      input_right.value = value;
-      break;
+      //m pra cm
+      var value = input_left * 100
+      input_right.value = value     
   }
 }
