@@ -7,11 +7,13 @@ const cmConvert = () => {
   
   switch (index) {
     case "1":
-      var value = 1 // logica aqui
+      //cm pra m
+      var value = input_left / 100
       input_right.value = value;
       break;
     case "2":
-      var value = 1 // logica aqui
+      //cm pra km
+      var value = input_left / 100000
       input_right.value = value;
       break;
     case "3":
