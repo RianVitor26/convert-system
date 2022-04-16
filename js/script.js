@@ -2,6 +2,7 @@
 const temperatura = [ "Celsius", "Fahrenheit", "kelvin"]
 const comprimento = [ "Metro", "Quilômetro", "Centímentro"]
 const medidas = [ "Gramas", "Kilogramas", "Litros", "Militros"]
+const moedas = ["Dólar", "Real", "Euro", "Bitcoin"]
 
 // Estruturação
 const getType = () => {
@@ -20,6 +21,9 @@ const setValues = (index) => {
       break;
     case "3":
       setSelect(medidas)
+      break;
+    case "4":
+      setSelect(moedas)
       break;
     default:
       break;
@@ -53,6 +57,10 @@ var imported = document.createElement('script');
 imported.src = 'js/medidas/main.js';
 document.body.appendChild(imported); 
 
+var imported = document.createElement('script');
+imported.src = 'js/moedas/main.js'
+document.body.appendChild(imported)
+
 // Conversões
 const convert = () => {
   var e = document.getElementById("convert");
@@ -66,6 +74,9 @@ const convert = () => {
       break;
     case "3":
       convertMedidas()
+      break;
+    case "4":
+      convertMoedas()
       break;
     default:
       break;
