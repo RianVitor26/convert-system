@@ -39,6 +39,13 @@ h1{
     margin-bottom: 25px;
 }
 
+.box-imput{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
 .block-input{
     display: inline-block;
     width: 211px;
