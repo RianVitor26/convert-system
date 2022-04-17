@@ -1,6 +1,6 @@
 // Listas
-const temperatura = [ "Celsius", "Fahrenheit", "kelvin"]
-const comprimento = [ "Metro", "Quilômetro", "Centímentro"]
+const temperatura = ["Celsius", "Fahrenheit", "kelvin"]
+const comprimento = ["Metro", "Quilômetro", "Centímentro", "Decâmetro", "Hectômetro", "Milímetro", "Decímetro"] 
 const medidas = [ "Gramas", "Kilogramas", "Litros", "Militros"]
 const moedas = ["Dólar", "Real", "Euro", "Bitcoin"]
 

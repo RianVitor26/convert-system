@@ -7,17 +7,32 @@ const cmConvert = () => {
   
   switch (index) {
     case "1":
-      //cm pra m
       var value = input_left / 100
       input_right.value = value;
       break;
     case "2":
-      //cm pra km
       var value = input_left / 100000
       input_right.value = value;
       break;
     case "3":
-      input_right.value = "Mesmo Valor";
+      var value = "Mesmo Valor"
+      input_right.value = value;
+      break;
+    case "4":
+      var value = input_left / 10000
+      input_right.value = value;
+      break;
+    case "5":
+      var value = input_left / 1000
+      input_right.value = value;
+      break;
+    case "6":
+      var value = input_left * 10
+      input_right.value = value;
+      break;
+    case "7":
+      var value = input_left / 10
+      input_right.value = value;
       break;
   }
 }

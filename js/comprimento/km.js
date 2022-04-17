@@ -7,16 +7,38 @@ const kmConvert = () => {
   
   switch (index) {
     case "1":
-      //km pra m
+      //M
       var value = input_left * 1000
       input_right.value = value;
       break;
     case "2":
-      input_right.value = "Mesmo Valor";
+      //KM
+      var value = "Mesmo valor"
+      input_right.value = value;
       break;
     case "3":
-      //km pra cm
+      //CM
       var value = input_left * 100000
+      input_right.value = value;
+      break;
+    case "4":
+      //DAM
+      var value = input_left * 100
+      input_right.value = value;
+      break;
+    case "5":
+      //HM
+      var value = input_left * 10
+      input_right.value = value;
+      break;
+    case "6":
+      //MM
+      var value = input_left * 1000000
+      input_right.value = value;
+      break;
+    case "7":
+      //DM
+      var value = input_left * 10000
       input_right.value = value;
       break;
   }
