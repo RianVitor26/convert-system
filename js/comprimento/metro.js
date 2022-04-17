@@ -7,16 +7,39 @@ const metroConvert = () => {
   
   switch (index) {
     case "1":
-      input_right.value = "Mesmo Valor";
+      //M
+      var value = "Mesmo valor"
+      input_right.value = value;
       break;
     case "2":
-      //m pra km
+      //KM
       var value = input_left / 1000
-      input_right.value = value     
+      input_right.value = value;
       break;
     case "3":
-      //m pra cm
+      //CM
       var value = input_left * 100
-      input_right.value = value     
+      input_right.value = value;
+      break;
+    case "4":
+      //DAM
+      var value = input_left / 10
+      input_right.value = value;
+      break;
+    case "5":
+      //HM
+      var value = input_left / 100
+      input_right.value = value;
+      break;
+    case "6":
+      //MM
+      var value = input_left * 1000
+      input_right.value = value;
+      break;
+    case "7":
+      //DM
+      var value = input_left * 10
+      input_right.value = value;
+      break;
   }
 }
