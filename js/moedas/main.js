@@ -16,7 +16,7 @@ document.head.appendChild(imported);
 
 //Convertendo moedas
 
-const ConvertMoedas = () => {
+const convertMoedas = () => {
     var e = document.getElementById("select-left");
   var index = e.options[e.selectedIndex].value;
   switch (index) {

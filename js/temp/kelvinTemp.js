@@ -7,15 +7,15 @@ const kelvinConvert = () => {
   
   switch (index) {
     case "1":
-      console.log("kelvin x celsius")
-      // Logica para converter para Celsius
+      var value = input_left - 273.15
+      input_right.value = value
       break;
     case "2":
-      console.log("kelvin x Fahrenheit")
-      // Logica para converter para Fahrenheit
+      var value = (input_left - 273.15) * 9/5 + 32
+      input_right.value = value
       break;
     case "3":
-      console.log("kelvin x kelvin")
+      input_right.value = "Mesmo tipo"
       break;
   }
 }

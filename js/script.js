@@ -19,10 +19,8 @@ const setValues = (index) => {
     case "2":
       setSelect(comprimento)
       break;
-    case "3":
-      setSelect(medidas)
       break;
-    case "4":
+    case "3":
       setSelect(moedas)
       break;
     default:
@@ -54,10 +52,6 @@ imported.src = 'js/comprimento/main.js';
 document.body.appendChild(imported); 
 
 var imported = document.createElement('script');
-imported.src = 'js/medidas/main.js';
-document.body.appendChild(imported); 
-
-var imported = document.createElement('script');
 imported.src = 'js/moedas/main.js'
 document.body.appendChild(imported)
 
@@ -73,9 +67,6 @@ const convert = () => {
       convertComprimento()
       break;
     case "3":
-      convertMedidas()
-      break;
-    case "4":
       convertMoedas()
       break;
     default:

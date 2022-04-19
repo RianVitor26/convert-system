@@ -7,15 +7,15 @@ const fahrConvert = () => {
 
   switch (index) {
     case "1":
-      console.log("Fahrenheit x celsius")
-      // Logica para converter para Celsius
+      var value = (input_left - 32)* 5/9
+      input_right.value = value
       break;
     case "2":
-      console.log("Fahrenheit x Fahrenheit")
+      input_right.value = "Mesmo tipo"
       break;
     case "3":
-      console.log("Fahrenheit x kelvin")
-       // Logica para converter para kelvin
+      var value = (input_left - 32) * 5/9 + 273.15
+      input_right.value = value
       break;
   }
 }

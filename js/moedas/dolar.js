@@ -10,17 +10,17 @@ const dolarConvert = () => {
       input_right.value = "Mesmo tipo"
       break;
     case "2":
-      // 1 real para dolar : 4,50 (pode mudar)
+      // 1 dolar para real : 4,50 (pode mudar)
       var value = (input_left * 0.21)
       input_right.value = value      
       break;
     case "3":
-       // 1 euro para dolar : 1.08 (pode mudar)
+       // 1 dolar para euro : 1.08 (pode mudar)
        var value = (input_left * 1.08)
        input_right.value = value      
       break;
     case "4":
-        // 1 bitcoin para dolar ( pode mudar)
+        // 1 dolar para bitcoin ( pode mudar)
         var value = (input_left * 40039.30)
         input_right.value = value
         break;
