@@ -7,21 +7,21 @@ const realConvert = () => {
   
     switch (index) {
       case "1":
-        input_right.value = "Mesmo tipo"
+        var value = (input_left * 0.22)
+        input_right.value = value
         break;
       case "2":
-        // dolar para real
-        var value = (input_left * 4.50)
-        input_right.value = value      
+        // real para dolar]
+        input_right.value = "Mesmo tipo"      
         break;
       case "3":
-         // 1 euro para real
-         var value = (input_left * 5.08)
+         // real para euro
+         var value = (input_left * 0.20)
          input_right.value = value      
         break;
       case "4":
-          // 1 bitcoin para real ( pode mudar)
-          var value = (input_left * 188892.29)
+          // real apra bitcoin
+          var value = (input_left * 0.0000051)
           input_right.value = value
           break;
     }
