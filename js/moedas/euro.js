@@ -7,21 +7,21 @@ const euroConvert = () => {
   
     switch (index) {
       case "1":
-        input_right.value = "Mesmo tipo"
+        // euro para dolar
+        var value = (input_left * 1.08)
+        input_right.value = value 
         break;
       case "2":
-        // dolar para euro
-        var value = (input_left * 0.92)
+        // euro para real 
+        var value = (input_left * 5.01)
         input_right.value = value      
         break;
       case "3":
-         // real para euro
-         var value = (input_left * 0.20)
-         input_right.value = value      
+        input_right.value = "Mesmo tipo"     
         break;
       case "4":
-          // 1 bitcoin para euro ( pode mudar)
-          var value = (input_left * 37125.30)
+          // euro para bitcoin ( pode mudar)
+          var value = (input_left * 0.000026)
           input_right.value = value
           break;
     }

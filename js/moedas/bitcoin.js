@@ -7,22 +7,22 @@ const bitcoinConvert = () => {
   
     switch (index) {
       case "1":
-        input_right.value = "Mesmo tipo"
+        // bitcoin para dolar
+        var value = (input_left * 42114.60)
+        input_right.value = value
         break;
       case "2":
-        // dolar para bitcoin
-        var value = (input_left * 0.000025)
-        input_right.value = value      
+        // bitcoin para real
+        var value = (input_left * 194683.16)
+        input_right.value = value     
         break;
       case "3":
-         // euro para bitcoin
-         var value = (input_left * 0.000027)
-         input_right.value = value      
+        // bitcin para euro
+        var value = (input_left * 38858.72)
+        input_right.value = value      
         break;
       case "4":
-          //1 real para bitcoin
-          var value = (input_left * 0.0000053)
-          input_right.value = value
-          break;
+        input_right.value = "Mesmo tipo"    
+        break;
     }
   }
