@@ -1,8 +1,10 @@
 // Listas
 const temperatura = ["Celsius", "Fahrenheit", "kelvin"]
 const comprimento = ["Metro", "Quilômetro", "Centímentro", "Decâmetro", "Hectômetro", "Milímetro", "Decímetro"] 
-const medidas = [ "Gramas", "Kilogramas", "Litros", "Militros"]
 const moedas = ["Dólar", "Real", "Euro", "Bitcoin"]
+const hora = ["Segundos", "Minutos", "Hora", "Dias"]
+const peso = [ "Gramas", "Kilogramas", "Toneladas"]
+const liquido = ["Mililitros", "Litros"]
 
 // Estruturação
 const getType = () => {
@@ -22,6 +24,15 @@ const setValues = (index) => {
       break;
     case "3":
       setSelect(moedas)
+      break;
+    case "4":
+      setSelect(hora)
+      break;
+    case "5":
+      setSelect(peso)
+      break;
+    case "6":
+      setSelect(liquido)
       break;
     default:
       break;
@@ -55,6 +66,18 @@ var imported = document.createElement('script');
 imported.src = 'js/moedas/main.js'
 document.body.appendChild(imported)
 
+var imported = document.createElement('script');
+imported.src = 'js/hora/main.js'
+document.body.appendChild(imported)
+
+var imported = document.createElement('script');
+imported.src = 'js/peso/main.js'
+document.body.appendChild(imported)
+
+var imported = document.createElement('script');
+imported.src = 'js/liquido/main.js'
+document.body.appendChild(imported)
+
 // Conversões
 const convert = () => {
   var e = document.getElementById("convert");
@@ -68,6 +91,15 @@ const convert = () => {
       break;
     case "3":
       convertMoedas()
+      break;
+    case "4":
+      convertHora()
+      break;
+    case "5":
+      convertPeso()
+      break;
+    case "6":
+      convertLiquido()
       break;
     default:
       break;
