@@ -3,7 +3,7 @@ const temperatura = ["Celsius", "Fahrenheit", "kelvin"]
 const comprimento = ["Metro", "Quilômetro", "Centímentro", "Decâmetro", "Hectômetro", "Milímetro", "Decímetro"] 
 const moedas = ["Dólar", "Real", "Euro", "Bitcoin"]
 const hora = ["Segundos", "Minutos", "Hora", "Dias"]
-const peso = [ "Gramas", "Kilogramas", "Toneladas"]
+const peso = ["Gramas", "Quilogramas", "Toneladas"]
 const liquido = ["Mililitros", "Litros"]
 
 // Estruturação
@@ -20,7 +20,6 @@ const setValues = (index) => {
       break;
     case "2":
       setSelect(comprimento)
-      break;
       break;
     case "3":
       setSelect(moedas)
