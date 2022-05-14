@@ -1,4 +1,4 @@
-const toneladasConvert = () => {
+const kilogramasConvert = () => {
     var e = document.getElementById("select-right");
     var index = e.options[e.selectedIndex].value;
     
@@ -7,16 +7,16 @@ const toneladasConvert = () => {
   
     switch (index) {
         case "1":
-            var value = (input_left * 1000000)
+            var value = (input_left * 1000)
             input_right.value = value 
         break;
         
         case "2":
-            var value = (input_left * 1000)
-            input_right.value = value 
+            input_right.value = "Mesmo Tipo"  
         break;
         case "3":
-            input_right.value = "Mesmo Tipo"  
+            var value = (input_left / 1000)
+            input_right.value = value 
         break;
     }
   }
